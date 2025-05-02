@@ -1,0 +1,15 @@
+def increment(n):
+    "Increment a number
+    print(f"input: {n}")
+    return n + 2
+
+result = increment (5)
+print(f"output: {result}")
+
+
+# def increment(n):
+#     print(f"input: {n}")
+#     result = n + 1
+#     print(f"output: {result}")
+#     return result
+

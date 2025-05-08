@@ -44,7 +44,40 @@ ops_func = ops[ops_char]
 result = ops_func(first_value, second_value)
 print(result)
 
-print(inspect.getfile(operator))
+# print(inspect.getfile(operator))
 print(round(3.5))
 
+operator_path = "/usr/lib/python3.13/operator.py"
+
+if operator_path == inspect.getfile(operator): 
+	while True:
+		names = input("Enter name: ")
+		num1 = int(input("Enter number: "))
+		num2 = int(input("Enter 2nd number: "))
+		operates = {
+			"+": operator.add,
+			"-": operator.sub,
+			"*": operator.mul,
+			"/": operator.truediv
+		}
+		operations = input("Operato?: ")
+		operations_functions = operates[operations]
+		result = operations_functions(num1, num2)
+		print(result)
+		if result == operations_functions(num1, num2):
+			print("Function is completed.")
+			break
+		else:
+			print("Error!")
+			print("Again!")
+
+		
+
+
+
+
+# elif operator_path != inspect.getfile(operator):
+# 	print("Warning!: The file is missing or the file is not within path")
+# else:
+# 	print("Error!")
 

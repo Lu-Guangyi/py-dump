@@ -1,5 +1,6 @@
 import operator
 import inspect
+import sqlite3
 
 character_name = "Tom"
 character_age = 50.45645
@@ -60,7 +61,7 @@ if operator_path == inspect.getfile(operator):
 			"*": operator.mul,
 			"/": operator.truediv
 		}
-		operations = input("Operato?: ")
+		operations = input("Operator?: ")
 		operations_functions = operates[operations]
 		result = operations_functions(num1, num2)
 		print(result)

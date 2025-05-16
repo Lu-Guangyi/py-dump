@@ -1,6 +1,7 @@
 import operator
 import inspect
 import sqlite3
+import trace
 
 character_name = "Tom"
 character_age = 50.45645
@@ -61,6 +62,7 @@ if operator_path == inspect.getfile(operator):
 			"*": operator.mul,
 			"/": operator.truediv
 		}
+
 		operations = input("Operator?: ")
 		operations_functions = operates[operations]
 		result = operations_functions(num1, num2)
@@ -72,7 +74,16 @@ if operator_path == inspect.getfile(operator):
 			print("Error!")
 			print("Again!")
 
-		
+color = input("Enter a Color: ")
+plural_noun = input("Enter a PLural Noun: ")
+celebrity = input("Enter a celebrtity: ")
+
+print("Roses are" + color)
+# print ("")
+
+friends = ["Kevin", "Karen", "Jaden",]
+
+print(friends[0])
 
 
 

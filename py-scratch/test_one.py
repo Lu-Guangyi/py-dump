@@ -85,8 +85,10 @@ friends = ["Kevin", "Karen", "Jaden",]
 
 print(friends[0])
 
-
-
+if friends == ([0], [1], [2]):
+        print("True")
+else:
+        print("False")
 
 # elif operator_path != inspect.getfile(operator):
 # 	print("Warning!: The file is missing or the file is not within path")
